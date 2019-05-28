@@ -6,7 +6,7 @@ import os
 
 class SPIRVConan(ConanFile):
     name = "spirv-headers"
-    version = "1.3.7"
+    version = "1.4.1"
     description = "Khronos SPIRV-Headers"
     topics = ("conan", "spirv")
     url = "https://github.com/bincrafters/conan-spirv-headers"
@@ -23,7 +23,7 @@ class SPIRVConan(ConanFile):
 
     def source(self):
         source_url = "https://github.com/KhronosGroup/SPIRV-Headers"
-        checksum = "60c48b0bd0c364a69edd36ddf576a6b440babc99d9822961accbbcbc5794dd7e"
+        checksum = "a244f0629f75eb450e090cd773d30e22367cb231e964c7492588eb9000201fd1"
         tools.get("{0}/archive/{1}.tar.gz".format(source_url, self.version), sha256=checksum)
         extracted_dir = "SPIRV-Headers-" + self.version
 
